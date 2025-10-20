@@ -27,6 +27,13 @@ public class UserController {
     }
 
 
+    @PutMapping("{id}")
+    public void atualizarUser(@PathVariable("id") Integer id,      // esse pathvariable, voce precisa indicar oque vc quer passa dentro dele no caso o ID
+                              @RequestBody User user) {            // vc pega esse id e coloca dentro de um set ent vc pega esse set e atualiza junto com o novoUser
+        user.setId(id);                                            // que vc esta passando na requisicao, ele pega o id pra saber qual é, e pega oque vc quer atualiza na requisicao que vc mando.
+        service.atualizarUser(user);
+
+    }
 
 
 }
