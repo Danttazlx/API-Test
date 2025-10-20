@@ -20,6 +20,10 @@ public class Service {
         return repository.save(user);
  }
 
+ public void atualizarUser(User user){
+        repository.save(user);
+
+ }
 
 
 
