@@ -25,6 +25,11 @@ public class Service {
 
  }
 
+ public User buscarPorId(Integer id ){
+        return repository.findById(id).orElse(null);   // aqui ou ele retorna um o id o (user dentro do banco) ou ele retorna um null
+
+ }
+
 
 
 
