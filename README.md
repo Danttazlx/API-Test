@@ -20,15 +20,4 @@ H2 Database
 
 Maven como gerenciador de dependências
 
-🧠 Estrutura do Projeto
 
-src/
- └── main/
-      ├── java/Exemplo/api_generic/
-      │    ├── controller/ → Recebe as requisições HTTP
-      │    ├── service/ → Contém a lógica de negócio
-      │    ├── repository/ → Faz a comunicação com o banco (JPA)
-      │    └── model/ → Contém as entidades (User)
-      └── resources/
-           ├── application.properties → Configurações do projeto
-           └── data.sql (opcional) → Dados de teste
